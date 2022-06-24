@@ -1,20 +1,19 @@
 import React from "react";
-import Header from "../../components/Header";
 import Lists from "../../components/Lists";
 import Bio from "../../components/Bio";
 import { data } from "../../data/data";
+import { Title, MainInfo } from "../../styles/styles";
 
 const About = () => {
   return (
-    <div>
-      <Header />
-      <h1>About</h1>
+    <MainInfo>
+      <Title>About</Title>
       <Bio bio={data.bio} />
       <Lists
         experience={data.experience}
         awards={data.awards}
       />
-    </div>
+    </MainInfo>
   );
 };
 

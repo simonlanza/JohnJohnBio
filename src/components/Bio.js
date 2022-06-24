@@ -1,10 +1,11 @@
 import React from "react";
+import { BioSection } from "../styles/styles";
 
 const Bio = ({ bio }) => {
     return (
-        <section className='bio'>
+        <BioSection className='bio'>
             <p>{bio}</p>
-        </section>
+        </BioSection>
     )
 }
 

@@ -1,18 +1,25 @@
 import React from "react";
+import { HeaderContainer, HeaderButton } from "../styles/styles";
 import GoTo from "./GoTo";
 
 const Header = () => {
-    return (
-        <header className='header'>
-            <nav className='nav'>
-                <ul className='nav-ul'>
-                    <GoTo argumentOne={"Home"} argumentTwo={"/"}></GoTo>
-                    <GoTo argumentOne={"About"} argumentTwo={"/about"}></GoTo>
-                    <GoTo argumentOne={"Contact"} argumentTwo={"/contact"}></GoTo>
-                </ul>
-            </nav>
-        </header>
-    )
-}
+  return (
+    <HeaderContainer className="header">
+      <nav className="nav">
+        <ul className="nav-ul">
+          <HeaderButton>
+            <GoTo argumentOne={"Home"} argumentTwo={"/"}></GoTo>
+          </HeaderButton>
+          <HeaderButton>
+            <GoTo argumentOne={"About"} argumentTwo={"/about"}></GoTo>
+          </HeaderButton>
+          <HeaderButton>
+            <GoTo argumentOne={"Contact"} argumentTwo={"/contact"}></GoTo>
+          </HeaderButton>
+        </ul>
+      </nav>
+    </HeaderContainer>
+  );
+};
 
 export default Header;

@@ -1,13 +1,14 @@
 import React from "react"
 import Experience from "./Experience"
 import Awards from "./Awards"
+import { ListsSection } from "../styles/styles"
 
 const Lists = ({ experience, awards }) => {
     return (
-        <section className='lists'>
+        <ListsSection>
             <Experience experience={experience} />
             <Awards awards={awards} />
-        </section>
+        </ListsSection>
     )
 }
 
