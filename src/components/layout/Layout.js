@@ -5,9 +5,10 @@ import Header from '../Header';
 
 const Layout = ({children}) => {
     const location = useLocation();
+    const componentsToHide = location.pathname.includes("/login")
     return (
         <>
-            {location.pathname === "/login" ? null : <Header />}
+            {componentsToHide ? null : <Header />}
             {children}
         </>
     )

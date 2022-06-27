@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
-export const SignUpContainer = styled.div`
+export const LoginContainer = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: lightseagreen;
@@ -10,7 +9,31 @@ export const SignUpContainer = styled.div`
   width: 100vw;
   margin: 0;
   padding: 0;
+  gap: 5vw;
 `;
+
+export const LoginDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 70vh;
+  width: 40vw;
+  background-color: whitesmoke;
+  border-radius: 30px;
+  border: 1px solid purple;
+  box-shadow: 0 0 55px rgba(125, 33, 129, 0.8);
+  flex-wrap: wrap;
+  h1{
+    padding: 20px;
+    text-align: center;
+  }
+  p {
+    padding: 10px;
+    text-align: center;
+    color: lightseagreen;
+  }
+`
 
 export const SignUpForm = styled.form`
   display: flex;
@@ -18,37 +41,39 @@ export const SignUpForm = styled.form`
   justify-content: space-around;
   align-items: center;
   height: 70vh;
-  width: 60vw;
+  width: 40vw;
   background-color: whitesmoke;
   border-radius: 30px;
   border: 1px solid purple;
   box-shadow: 0 0 55px rgba(125, 33, 129, 0.8);
-  h1 {
-    font-size: 2rem;
-    font-weight: bold;
-  }
 `;
 
-export const Pswitch = styled.p`
-  font-weight: 100;
-  color: lightseagreen;
-  button {
-    font-size: 1rem;
-    font-weight: bold;
-    color: lightseagreen;
-    background-color: whitesmoke;
-    border: none;
-    :hover {
-      cursor: pointer;
-    }
-  }
-`;
+export const ButtonContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+`
 
 export const LabelCheckbox = styled.label`
   width: 15rem;
   font-weight: 100;
   font-size: 0.8rem;
   color: lightseagreen;
+`
+
+export const InputContainer = styled.div`
+  display: flex;
+  width: 70%;
+  gap: 5px;
+  position: relative;
+`
+
+export const ISpan = styled.span`
+  position: absolute;
+  top: 7px;
+  left: 4px;
+  padding: 2%;
 `
 
 export const Input = styled.input`
@@ -59,11 +84,8 @@ export const Input = styled.input`
   border-radius: 24px;
   box-shadow: 0 0 30px rgba(125, 33, 129, 0.3);
   height: 3rem;
-  width: 20rem;
-  ::placeholder {
-    color: lightseagreen;
-    padding-left: 35px;
-  }
+  width: 100%;
+  padding-left: 40px;
 `
 
 export const Button = styled.button`
@@ -83,10 +105,11 @@ export const HeaderContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 10vh;
+  height: 15vh;
   width: 100vw;
   background-color: lightseagreen;
   padding-bottom: 30px;
+  gap: 20px;
   nav {
     display: flex;
     flex-direction: row;
@@ -119,6 +142,34 @@ export const HeaderButton = styled.button`
     color: #031211;
   }
 `
+export const SearchForm = styled.form`
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+`;
+
+export const SearchInput = styled.input`
+    width: 400px;
+    height: 27px;
+    padding: 10px;
+    border: none;
+    box-shadow: 0 0 30px rgba(125, 33, 129, 0.4);
+    background-color:  #40e0d0;;
+    :focus{
+        outline: none;
+    }
+    border-radius: 25px 0 0 25px;
+`;
+
+export const SearchButton = styled.button`
+    padding: 10px;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    background-color: #40e0d0;
+    
+`;
+
 
 export const MainInfo = styled.main`
   padding: 15px;

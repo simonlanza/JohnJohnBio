@@ -7,6 +7,8 @@ import Error from "./components/Error";
 import ProtectedRoutes from "./components/protectedRoutes/ProtectedRoutes";
 import Layout from "./components/layout/Layout";
 import Login from "./pages/login/Login";
+import SignIn from "./pages/login/SignIn";
+import SignUp from "./pages/login/SignUp";
 
 function App() {
   const [isLogged, setIsLogged] = useState(false);
@@ -14,10 +16,10 @@ function App() {
     <BrowserRouter>
       <Layout>
         <Routes>
-          <Route
-            path="/login"
-            element={<Login setIsLogged={setIsLogged} />}
-          />
+          <Route path="/login" element={<Login setIsLogged={setIsLogged} />}>
+            <Route path="/login/signup" element={<SignUp setIsLogged={setIsLogged} />} />
+            <Route path="/login/signin" element={<SignIn setIsLogged={setIsLogged} />} />
+          </Route>
           <Route element={<ProtectedRoutes isLogged={isLogged} />}>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
