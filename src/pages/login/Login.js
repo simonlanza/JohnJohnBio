@@ -19,7 +19,8 @@ const Login = ({ setIsLogged }) => {
           account by clicking on Sign Up.
         </p>
         <p>
-          Our page is still on development, so some functionalities may not be working.
+          Our page is still on development, so some functionalities may not be
+          working.
         </p>
         <ButtonContainer>
           <Button onClick={() => navigate("signin")}>Sign In</Button>
