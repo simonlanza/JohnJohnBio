@@ -7,7 +7,6 @@ import {
   SearchInput,
 } from "../styles/styles";
 import GoTo from "./GoTo";
-import SearchIcon from "@mui/icons-material/Search";
 import { useNavigate } from "react-router-dom";
 
 const Header = () => {
@@ -21,7 +20,7 @@ const Header = () => {
       <SearchForm onSubmit={handler}>
         <SearchInput type="text" placeholder="Search" />
         <SearchButton type="submit">
-          <SearchIcon />
+          buscar
         </SearchButton>
       </SearchForm>
       <nav className="nav">
